@@ -105,9 +105,70 @@ Si la operación fue exitosa, se mostrará una respuesta con **código 200 (OK)*
 <!-- Inserta aquí una imagen mostrando la eliminación exitosa -->
 
 
-Y para las **Motos** sería el mismo proceso, pero en las **URL** en vez de decir **vehiculo** tiene que decir **moto**.
+
+---
+---
+
+## 🏍️ GESTIÓN DE MOTOS
+
+Para las motos, lo único que cambia es la **URL**: en vez de poner `vehiculos`, debes usar `motos`.
+
+---
+
+### ➕ Crear moto
+**URL:** **http://localhost:8080/api/motos**  
+**Método:** **POST**
+
+Es muy similar al de vehículos, solo cambia la URL.  
+<!-- 📸 Imagen del formulario form-data en Postman -->
+<img width="1374" height="640" alt="Captura de pantalla 2025-11-05 165629" src="https://github.com/user-attachments/assets/17fec9e9-f13c-474c-a41e-3cd2aef4d293" />
+
+---
+
+### 🔍 Buscar todas las motos
+**URL:** **http://localhost:8080/api/motos**  
+**Método:** **GET**
+
+Devuelve la lista de todas las motos registradas.  
+<!-- 📸 Imagen mostrando el resultado en Postman -->
+<img width="1362" height="587" alt="Captura de pantalla 2025-11-05 165743" src="https://github.com/user-attachments/assets/16e8feb5-5048-4353-9379-c6ffd9c847f2" />
+
+---
+
+### 🔎 Buscar moto por ID
+**URL:** **http://localhost:8080/api/motos/{moto_id}**  
+**Método:** **GET**
+
+El parámetro se pasa por la URL como se muestra en la imagen.  
+<!-- 📸 Imagen del ejemplo de búsqueda por ID -->
+<img width="1380" height="512" alt="Captura de pantalla 2025-11-05 165946" src="https://github.com/user-attachments/assets/8f301fda-b9e0-419f-9555-c73726fc9bb7" />
+
+---
+
+### ✏️ Actualizar moto
+**URL:** **http://localhost:8080/api/motos/{moto_id}**  
+**Método:** **PUT**
+
+Funciona igual que el método de crear moto, pero con **PUT**, por lo que actualiza los datos existentes.  
+<!-- 📸 Imagen del ejemplo en Postman -->
+<img width="1380" height="658" alt="Captura de pantalla 2025-11-05 170128" src="https://github.com/user-attachments/assets/8471ac19-8205-4e3a-9f1a-1c4202effef9" />
+
+---
+
+### ❌ Eliminar moto
+**URL:** **http://localhost:8080/api/motos/{moto_id}**  
+**Método:** **DELETE**
+
+Permite eliminar una moto existente por su ID.  
+<!-- 📸 Imagen mostrando la eliminación exitosa -->
+<img width="1382" height="371" alt="Captura de pantalla 2025-11-05 170252" src="https://github.com/user-attachments/assets/3fa9baa7-4efb-4f21-b467-1bb9e39a2009" />
+
 ---
 
 ## ✅ Conclusión
 
-Ya sabes cómo ejecutar y probar el proyecto **Vehículos - Back - Main** utilizando **Spring Boot** y **Postman**.
+Ya sabes cómo ejecutar y probar el proyecto **Vehículos - Back - Main** utilizando **Spring Boot** y **Postman**.  
+
+
+
+
